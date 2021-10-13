@@ -1,0 +1,111 @@
+-- TrioBox v1.0
+-- Version: 1.0
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TrioBoxv10 = Instance.new("Frame")
+local TrioBox = Instance.new("TextLabel")
+local WELCOME = Instance.new("TextLabel")
+local FantaHub = Instance.new("TextButton")
+local antisteal = Instance.new("TextButton")
+local MadeByMasterBoi = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local TB = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TrioBoxv10.Name = "TrioBox v1.0"
+TrioBoxv10.Parent = ScreenGui
+TrioBoxv10.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TrioBoxv10.Position = UDim2.new(-0.00595679879, 0, 0, 0)
+TrioBoxv10.Size = UDim2.new(0, 170, 0, 681)
+TrioBoxv10.Active = true
+
+TrioBox.Name = "TrioBox"
+TrioBox.Parent = TrioBoxv10
+TrioBox.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TrioBox.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TrioBox.Position = UDim2.new(0.00588235306, 0, 0, 0)
+TrioBox.Size = UDim2.new(0, 169, 0, 35)
+TrioBox.Font = Enum.Font.SciFi
+TrioBox.Text = "TrioBox v1.0"
+TrioBox.TextColor3 = Color3.fromRGB(255, 0, 4)
+TrioBox.TextSize = 23.000
+
+WELCOME.Name = "WELCOME"
+WELCOME.Parent = TrioBoxv10
+WELCOME.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+WELCOME.BorderColor3 = Color3.fromRGB(30, 30, 30)
+WELCOME.Position = UDim2.new(0, 0, 0.05185185, 0)
+WELCOME.Size = UDim2.new(0, 169, 0, 19)
+WELCOME.Font = Enum.Font.SciFi
+WELCOME.Text = "Welcome To TrioBox."
+WELCOME.TextColor3 = Color3.fromRGB(255, 0, 4)
+WELCOME.TextSize = 15.000
+
+FantaHub.Name = "Fanta Hub"
+FantaHub.Parent = TrioBoxv10
+FantaHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FantaHub.BorderColor3 = Color3.fromRGB(255, 0, 4)
+FantaHub.Position = UDim2.new(0, 0, 0.132275119, 0)
+FantaHub.Size = UDim2.new(0, 169, 0, 50)
+FantaHub.Font = Enum.Font.Code
+FantaHub.Text = "Fanta Hub"
+FantaHub.TextColor3 = Color3.fromRGB(255, 0, 4)
+FantaHub.TextSize = 14.000
+FantaHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/kyakuryc/fanta-hub/main/fanta_hub_raw.txt",true))()
+end)
+
+antisteal.Name = "antisteal"
+antisteal.Parent = TrioBoxv10
+antisteal.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+antisteal.BorderColor3 = Color3.fromRGB(255, 0, 4)
+antisteal.Position = UDim2.new(0, 0, 0.215873003, 0)
+antisteal.Size = UDim2.new(0, 169, 0, 50)
+antisteal.Font = Enum.Font.Code
+antisteal.Text = "antisteal"
+antisteal.TextColor3 = Color3.fromRGB(255, 0, 4)
+antisteal.TextSize = 14.000
+antisteal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/A2PAK3xD', true))()
+end)
+
+MadeByMasterBoi.Name = "Made By MasterBoi"
+MadeByMasterBoi.Parent = TrioBoxv10
+MadeByMasterBoi.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MadeByMasterBoi.BorderColor3 = Color3.fromRGB(30, 30, 30)
+MadeByMasterBoi.Position = UDim2.new(0, 0, 0.963289261, 0)
+MadeByMasterBoi.Size = UDim2.new(0, 170, 0, 25)
+MadeByMasterBoi.Font = Enum.Font.SciFi
+MadeByMasterBoi.Text = "Made By MasterBoi"
+MadeByMasterBoi.TextColor3 = Color3.fromRGB(255, 0, 4)
+MadeByMasterBoi.TextSize = 19.000
+
+Close.Name = "Close"
+Close.Parent = TrioBoxv10
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+Close.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Close.Position = UDim2.new(0, 0, 0.889867842, 0)
+Close.Size = UDim2.new(0, 170, 0, 50)
+Close.Font = Enum.Font.ArialBold
+Close.Text = "Close TrioBox"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 20.000
+Close.MouseButton1Down:connect(function()
+	TrioBoxv10.Visible = false
+end)
+
+TB.Name = "TB"
+TB.Parent = TrioBoxv10
+TB.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TB.BorderColor3 = Color3.fromRGB(30, 30, 30)
+TB.Position = UDim2.new(0, 0, 0.381791502, 0)
+TB.Size = UDim2.new(0, 169, 0, 241)
+TB.Font = Enum.Font.SourceSansBold
+TB.Text = "TB"
+TB.TextColor3 = Color3.fromRGB(255, 0, 4)
+TB.TextSize = 100.000
