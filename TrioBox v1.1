@@ -1,0 +1,141 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local trioboxv11 = Instance.new("ScreenGui")
+local trioboxgui = Instance.new("Frame")
+local fanta = Instance.new("TextButton")
+local pineapple = Instance.new("TextButton")
+local balk = Instance.new("Frame")
+local trioboxtext = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local loud = Instance.new("TextButton")
+local antisteal = Instance.new("TextButton")
+local logo = Instance.new("TextLabel")
+local sanityhub = Instance.new("TextButton")
+
+--Properties:
+
+trioboxv11.Name = "triobox v1.1"
+trioboxv11.Parent = game.CoreGui
+
+trioboxgui.Name = "triobox gui"
+trioboxgui.Parent = trioboxv11
+trioboxgui.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+trioboxgui.BackgroundTransparency = 0.300
+trioboxgui.BorderColor3 = Color3.fromRGB(59, 59, 59)
+trioboxgui.Position = UDim2.new(0.330603123, 0, 0.352380931, 0)
+trioboxgui.Size = UDim2.new(0, 455, 0, 290)
+trioboxgui.Active = true
+
+fanta.Name = "fanta"
+fanta.Parent = trioboxgui
+fanta.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+fanta.BorderColor3 = Color3.fromRGB(45, 45, 45)
+fanta.Position = UDim2.new(0, 0, 0.215053767, 0)
+fanta.Size = UDim2.new(0, 165, 0, 41)
+fanta.Font = Enum.Font.SciFi
+fanta.Text = "Fanta Hub"
+fanta.TextColor3 = Color3.fromRGB(0, 0, 0)
+fanta.TextSize = 23.000
+fanta.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/kyakuryc/fanta-hub/main/fanta_hub_raw.txt",true))()
+end)
+
+pineapple.Name = "pineapple"
+pineapple.Parent = trioboxgui
+pineapple.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+pineapple.BorderColor3 = Color3.fromRGB(45, 45, 45)
+pineapple.Position = UDim2.new(0, 0, 0.724014223, 0)
+pineapple.Size = UDim2.new(0, 165, 0, 41)
+pineapple.Font = Enum.Font.SciFi
+pineapple.Text = "Pineapple"
+pineapple.TextColor3 = Color3.fromRGB(0, 0, 0)
+pineapple.TextSize = 36.000
+pineapple.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/H2hnu5NK",true))()
+end)
+
+balk.Name = "balk"
+balk.Parent = trioboxgui
+balk.BackgroundColor3 = Color3.fromRGB(53, 51, 52)
+balk.BorderColor3 = Color3.fromRGB(53, 51, 52)
+balk.Size = UDim2.new(0, 455, 0, 43)
+
+trioboxtext.Name = "triobox text"
+trioboxtext.Parent = balk
+trioboxtext.BackgroundColor3 = Color3.fromRGB(53, 51, 52)
+trioboxtext.BorderColor3 = Color3.fromRGB(53, 51, 52)
+trioboxtext.Size = UDim2.new(0, 200, 0, 43)
+trioboxtext.Font = Enum.Font.Code
+trioboxtext.Text = "TrioBox v1.1"
+trioboxtext.TextColor3 = Color3.fromRGB(0, 0, 0)
+trioboxtext.TextSize = 30.000
+
+close.Name = "close"
+close.Parent = balk
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.BorderColor3 = Color3.fromRGB(255, 0, 0)
+close.Position = UDim2.new(0.923076928, 0, 0, 0)
+close.Size = UDim2.new(0, 35, 0, 43)
+close.Font = Enum.Font.SciFi
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 51.000
+close.MouseButton1Down:connect(function()
+	trioboxgui.Visible = false
+end)
+
+loud.Name = "loud"
+loud.Parent = trioboxgui
+loud.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+loud.BorderColor3 = Color3.fromRGB(45, 45, 45)
+loud.Position = UDim2.new(0, 0, 0.551971316, 0)
+loud.Size = UDim2.new(0, 165, 0, 41)
+loud.Font = Enum.Font.SciFi
+loud.Text = "Boombox Loud"
+loud.TextColor3 = Color3.fromRGB(0, 0, 0)
+loud.TextSize = 22.000
+loud.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/GuxLw11M'))()
+end)
+
+antisteal.Name = "antisteal"
+antisteal.Parent = trioboxgui
+antisteal.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+antisteal.BorderColor3 = Color3.fromRGB(45, 45, 45)
+antisteal.Position = UDim2.new(0, 0, 0.383512557, 0)
+antisteal.Size = UDim2.new(0, 165, 0, 41)
+antisteal.Font = Enum.Font.SciFi
+antisteal.Text = "antisteal"
+antisteal.TextColor3 = Color3.fromRGB(0, 0, 0)
+antisteal.TextSize = 33.000
+antisteal.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/A2PAK3xD', true))()
+end)
+
+logo.Name = "logo"
+logo.Parent = trioboxgui
+logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+logo.BackgroundTransparency = 1.000
+logo.Position = UDim2.new(0.362637371, 0, 0.172043011, 0)
+logo.Size = UDim2.new(0, 229, 0, 182)
+logo.Font = Enum.Font.GothamBold
+logo.Text = "TB"
+logo.TextColor3 = Color3.fromRGB(0, 0, 0)
+logo.TextSize = 100.000
+
+sanityhub.Name = "sanity hub"
+sanityhub.Parent = trioboxgui
+sanityhub.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+sanityhub.BorderColor3 = Color3.fromRGB(45, 45, 45)
+sanityhub.Position = UDim2.new(0.439560443, 0, 0.724014282, 0)
+sanityhub.Size = UDim2.new(0, 165, 0, 41)
+sanityhub.Font = Enum.Font.SciFi
+sanityhub.Text = "[BEST] Sanity Hub"
+sanityhub.TextColor3 = Color3.fromRGB(0, 0, 0)
+sanityhub.TextSize = 20.000
+sanityhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://sanityvanity.000webhostapp.com/SanityHub.lua'))()
+end)
